@@ -79,13 +79,6 @@ function Header() {
               Réalisations
             </Link>
             <Link
-              to="/careers"
-              className="text-gray-800 hover:text-blue-600 font-medium w-full"
-              onClick={toggleMenu}
-            >
-              Carrières
-            </Link>
-            <Link
               to="/contact"
               className="text-gray-800 hover:text-blue-600 font-medium w-full"
               onClick={toggleMenu}
