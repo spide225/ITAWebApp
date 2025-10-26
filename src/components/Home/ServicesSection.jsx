@@ -8,12 +8,12 @@ import { Droplets } from "lucide-react"
 function ServicesSection() {
     return (
         <section className="max-w-7xl mx-auto px-4 py-16">
-            <h2 className="text-3xl font-bold text-gray-900 text-center">Nos Services</h2>
+            <h2 className="text-3xl font-bold text-blue-900 text-center">Nos Services</h2>
             <p className="mt-3 text-gray-600 text-center max-w-2xl mx-auto">
                 Des prestations adaptées aux besoins des industriels et des entreprises dans plusieurs domaines d'expertises.
             </p>
 
-            <div className="mt-12 grid md:grid-cols-3 gap-8">
+            <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-8">
                 {/* Electricité */}
                 <div className="bg-white rounded-xl shadow-md p-6 text-center">
                     <Zap className="h-12 w-12 mx-auto text-yellow-500" />

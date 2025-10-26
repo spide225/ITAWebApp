@@ -2,7 +2,7 @@ function AboutValors() {
     return (
         <section className="mx-auto px-4 py-16 bg-white flex flex-col items-center">
             <div className="max-w-7xl">
-                <h2 className="text-2xl font-bold text-gray-900 text-center">Nos valeurs</h2>
+                <h2 className="text-2xl font-bold text-blue-900 text-center">Nos valeurs</h2>
                 <div className="mt-12 grid md:grid-cols-3 gap-8">
                     <div className="bg-white rounded-xl shadow-md p-6 text-center border-blue-900">
                         <h3 className="text-xl font-semibold text-blue-900">Innovation</h3>

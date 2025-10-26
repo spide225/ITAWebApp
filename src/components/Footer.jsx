@@ -45,10 +45,10 @@ function Footer() {
                     </h3>
                     <ul className="space-y-2 mt-3 text-gray-300 text-sm">
                         <li>
-                            Adresse : 123, Rue Exemple, Abidjan
+                            Adresse : Wassakara Yopougon, Abidjan
                         </li>
                         <li>
-                            Tél : +225 00 00 00 00
+                            Tél : +225 07 07 33 28 71
                         </li>
                         <li>
                             Email : <a href="mailto:contact@ita.ci" class="hover:text-blue-400">contact@ita-ci.com</a>

@@ -24,7 +24,7 @@ function ContactForm() {
   return (
     <section className="bg-gray-50 py-16">
       <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-xl p-8">
-        <h2 className="text-2xl font-bold text-center text-gray-900">Écrivez-nous</h2>
+        <h2 className="text-2xl font-bold text-center text-blue-900">Écrivez-nous</h2>
         <p className="text-center text-gray-600 mt-2 mb-8">
           Remplissez le formulaire ci-dessous, nous vous répondrons rapidement.
         </p>
@@ -40,7 +40,7 @@ function ContactForm() {
               type="text"
               value={formData.name}
               onChange={handleChange}
-              className="mt-1 w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              className="mt-1 w-full border-gray-300 rounded-lg shadow-sm"
             />
           </div>
 
@@ -54,7 +54,7 @@ function ContactForm() {
               type="email"
               value={formData.email}
               onChange={handleChange}
-              className="mt-1 w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              className="mt-1 w-full border-gray-300 rounded-lg shadow-sm"
             />
           </div>
 
@@ -68,7 +68,7 @@ function ContactForm() {
               type="text"
               value={formData.subject}
               onChange={handleChange}
-              className="mt-1 w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              className="mt-1 w-full border-gray-300 rounded-lg shadow-sm"
             />
           </div>
 
@@ -82,7 +82,7 @@ function ContactForm() {
               value={formData.message}
               onChange={handleChange}
               rows="4"
-              className="mt-1 w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              className="mt-1 w-full border-gray-300 rounded-lg shadow-sm"
             ></textarea>
           </div>
 

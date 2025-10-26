@@ -2,7 +2,7 @@ function FewProjects() {
     return (
         <section className="bg-gray-100 py-16">
             <div className="max-w-7xl mx-auto px-4">
-                <h2 className="text-3xl font-bold text-gray-900 text-center">Nos Réalisations</h2>
+                <h2 className="text-3xl font-bold text-blue-900 text-center">Nos Réalisations</h2>
                 <p className="mt-3 text-gray-600 text-center max-w-2xl mx-auto">
                     Quelques projets réalisés avec nos clients.
                 </p>

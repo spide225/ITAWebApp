@@ -2,7 +2,7 @@ function WhyUs() {
     return (
         <section className="bg-gray-100 py-16">
             <div className="max-w-7xl mx-auto px-4 text-center">
-                <h2 className="text-2xl font-bold text-gray-900">Pourquoi choisir ITA ?</h2>
+                <h2 className="text-2xl font-bold text-blue-900">Pourquoi choisir ITA ?</h2>
                 <div className="mt-12 grid md:grid-cols-3 gap-8">
                     <div className="bg-white rounded-xl shadow-md p-6 ">
                         <h3 className="text-xl font-semibold text-blue-900">Expertise</h3>

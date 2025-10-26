@@ -7,7 +7,7 @@ function ContactSection() {
         <div className="text-blue-600 flex justify-center mb-4">
           <Phone size={32} />
         </div>
-        <h3 className="text-lg font-semibold">Téléphone</h3>
+        <h3 className="text-lg font-semibold text-blue-900">Téléphone</h3>
         <p className="mt-2 text-gray-600">+225 07 07 33 28 71</p>
       </div>
 
@@ -15,7 +15,7 @@ function ContactSection() {
         <div className="text-blue-600 flex justify-center mb-4">
           <Mail size={32} />
         </div>
-        <h3 className="text-lg font-semibold">Email</h3>
+        <h3 className="text-lg font-semibold text-blue-900">Email</h3>
         <p className="mt-2 text-gray-600">contact@ita-ci.ci</p>
       </div>
 
@@ -23,7 +23,7 @@ function ContactSection() {
         <div className="text-blue-600 flex justify-center mb-4">
           <MapPin size={32} />
         </div>
-        <h3 className="text-lg font-semibold">Adresse</h3>
+        <h3 className="text-lg font-semibold text-blue-900">Adresse</h3>
         <p className="mt-2 text-gray-600">Yopougon, Abidjan</p>
       </div>
 
@@ -31,7 +31,7 @@ function ContactSection() {
         <div className="text-blue-600 flex justify-center mb-4">
           <Clock size={32} />
         </div>
-        <h3 className="text-lg font-semibold">Horaires</h3>
+        <h3 className="text-lg font-semibold text-blue-900">Horaires</h3>
         <p className="mt-2 text-gray-600">Lun – Ven, 08h – 18h</p>
       </div>
     </section>

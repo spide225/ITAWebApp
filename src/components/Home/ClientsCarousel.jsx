@@ -12,7 +12,7 @@ function ClientsCarousel() {
   return (
     <section className="bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-2xl font-bold text-gray-800 mb-10">
+        <h2 className="text-2xl font-bold text-blue-900 mb-10">
           Ils nous font confiance
         </h2>
 

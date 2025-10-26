@@ -1,12 +1,15 @@
+import imgCEO from "../../assets/img/photo-dg.jpg"
+
 function AboutCEO() {
     return (
         <section className="bg-gray-100 py-16">
             <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-                <div>
+                <div className="flex justify-center">
+                    <img src={imgCEO} className="rounded-full object-cover h-100 w-100" />
                     {/* <img src="{% static 'PresentationApp/img/dirigeant.jpg' %}" alt="Dirigeant ITA" className="rounded-2xl shadow-md"> */}
                 </div>
                 <div>
-                    <h2 className="text-2xl font-bold text-gray-900">Le mot du dirigeant</h2>
+                    <h2 className="text-2xl font-bold text-blue-900">Le mot du dirigeant</h2>
                     <p className="mt-4 text-gray-700">
                         « Chez ITA, nous croyons que l’électrotechnique est un levier stratégique pour la croissance
                         et la compétitivité des entreprises africaines. Notre mission est d’apporter des solutions fiables,
