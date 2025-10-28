@@ -1,3 +1,22 @@
+import { motion } from "framer-motion"
+import { animZoomIn } from "../animations/Variants"
+
+
+const Projects = [
+    {
+        title: "Installation industrielle",
+        desc: "Mise en place d’un système électrique complet pour une unité de production."
+    },
+    {
+        title: "Automatisation d’atelier",
+        desc: "Déploiement de solutions automatisées pour optimiser la chaîne de production."
+    },
+    {
+        title: "Maintenance préventive",
+        desc: "Programme de maintenance sur équipements haute tension."
+    },
+]
+
 function FewProjects() {
     return (
         <section className="bg-gray-100 py-16">
@@ -8,27 +27,26 @@ function FewProjects() {
                 </p>
 
                 <div className="mt-12 grid md:grid-cols-3 gap-8">
-                    <div className="bg-white rounded-xl shadow-md overflow-hidden">
-                        {/* <img src="{% static 'img/projet1.jpg' %}" alt="Projet 1" className="w-full h-48 object-cover"> */}
-                        <div className="p-4">
-                            <h3 className="text-lg font-semibold text-gray-900">Installation industrielle</h3>
-                            <p className="text-sm text-gray-600">Mise en place d’un système électrique complet pour une unité de production.</p>
-                        </div>
-                    </div>
-                    <div className="bg-white rounded-xl shadow-md overflow-hidden">
-                        {/* <img src="{% static 'img/projet2.jpg' %}" alt="Projet 2" className="w-full h-48 object-cover"> */}
-                        <div className="p-4">
-                            <h3 className="text-lg font-semibold text-gray-900">Automatisation d’atelier</h3>
-                            <p className="text-sm text-gray-600">Déploiement de solutions automatisées pour optimiser la chaîne de production.</p>
-                        </div>
-                    </div>
-                    <div className="bg-white rounded-xl shadow-md overflow-hidden">
-                        {/* <img src="{% static 'img/projet3.jpg' %}" alt="Projet 3" className="w-full h-48 object-cover"> */}
-                        <div className="p-4">
-                            <h3 className="text-lg font-semibold text-gray-900">Maintenance préventive</h3>
-                            <p className="text-sm text-gray-600">Programme de maintenance sur équipements haute tension.</p>
-                        </div>
-                    </div>
+
+                    {
+                        Projects.map((project) => (
+                            <motion.div
+                                variants={animZoomIn}
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: true, amount: 0.4 }}
+                            >
+<div className="bg-white rounded-xl shadow-md overflow-hidden">
+                                {/* <img src="{% static 'img/projet1.jpg' %}" alt="Projet 1" className="w-full h-48 object-cover"> */}
+                                <div className="p-4">
+                                    <h3 className="text-lg font-semibold text-gray-900">{project.title}</h3>
+                                    <p className="text-sm text-gray-600">{project.desc}</p>
+                                </div>
+                            </div>
+                            </motion.div>
+                            
+                        ))
+                    }
                 </div>
             </div>
         </section>

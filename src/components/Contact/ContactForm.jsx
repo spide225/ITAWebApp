@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
+import {animFadeOut, animZoomIn, animZoomOut} from "../animations/Variants"
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -23,11 +25,18 @@ function ContactForm() {
 
   return (
     <section className="bg-gray-50 py-16">
-      <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-xl p-8">
+      <motion.div
+      variants={animZoomOut}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.4 }}
+      >
+<div className="max-w-3xl mx-auto bg-white shadow-lg rounded-xl p-8">
         <h2 className="text-2xl font-bold text-center text-blue-900">Écrivez-nous</h2>
         <p className="text-center text-gray-600 mt-2 mb-8">
           Remplissez le formulaire ci-dessous, nous vous répondrons rapidement.
         </p>
+
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
@@ -94,6 +103,8 @@ function ContactForm() {
           </button>
         </form>
       </div>
+      </motion.div>
+      
     </section>
   );
 }
